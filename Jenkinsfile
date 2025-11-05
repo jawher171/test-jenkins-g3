@@ -2,7 +2,7 @@ pipeline {
 agent any
 options { timestamps() }
 environment {
-IMAGE = 'jawher/test-jenkins-g3'
+IMAGE = 'jawher/monapp'
 TAG = "build-${env.BUILD_NUMBER}"
 }
   stages {
