@@ -28,8 +28,8 @@ docker rm -f monapp_test
 }
 stage('Push (Docker Hub)') {
 steps {
-withCredentials([usernamePassword(credentialsId: 'dockerhub-creds',
-usernameVariable: 'jawher',
+withCredentials([usernamePassword(credentialsId: 'dockerhub-cred',
+usernameVariable: 'jawher14',
 passwordVariable: 'jawher@2004')]) {
 bat """
 echo %PASS% | docker login -u %USER% --password-stdin
